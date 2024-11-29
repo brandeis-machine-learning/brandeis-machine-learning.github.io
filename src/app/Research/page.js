@@ -1,12 +1,13 @@
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Research() {
   const articles = [
     {
       title: "Data-centric Learning in Computer Vision",
       description: "Exploring how data-centric approaches improve model performance and reduce bias in computer vision tasks.",
-      image: "/data-centric.png",
+      image: "./data-centric.png",
       date: "November 2024",
       slug: "data-centric-learning"
     }
@@ -38,11 +39,12 @@ export default function Research() {
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </div>
-                <div className="order-first md:order-last">
-                  <img 
+                <div className="order-first md:order-last relative h-64">
+                  <Image 
                     src={article.image}
                     alt={article.title}
-                    className="w-full h-64 object-cover rounded-lg shadow-md"
+                    fill
+                    className="object-cover rounded-lg shadow-md"
                   />
                 </div>
               </article>

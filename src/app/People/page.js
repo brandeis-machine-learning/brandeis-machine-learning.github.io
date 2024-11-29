@@ -15,7 +15,7 @@ export default function People() {
               </div>
               <p className="text-lg text-[#026670] leading-relaxed">
                 Dr. Liu received his Ph.D. from the Department of Electrical & Computer Engineering at Northeastern University, 
-                supervised by Prof. Yun Fu. He completed his master's and bachelor's degrees in management at Beihang University 
+                supervised by Prof. Yun Fu. He completed his master&apos;s and bachelor&apos;s degrees in management at Beihang University 
                 with Prof. Junjie Wu. His research interests include cluster analysis, outlier detection, transfer learning, 
                 and feature selection.
               </p>

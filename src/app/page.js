@@ -16,7 +16,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
               <p className="text-lg text-[#026670] leading-relaxed">
-                The Liu Lab at Brandeis University's Michtom School of Computer Science focuses on cutting-edge research in machine learning and artificial intelligence. Led by Dr. Hongfu Liu, our team develops novel algorithms and frameworks in cluster analysis, outlier detection, transfer learning, and feature selection.
+                The Liu Lab at Brandeis University&apos;s Michtom School of Computer Science focuses on cutting-edge research in machine learning and artificial intelligence. Led by Dr. Hongfu Liu, our team develops novel algorithms and frameworks in cluster analysis, outlier detection, transfer learning, and feature selection.
               </p>
               <p className="text-lg text-[#026670] leading-relaxed">
                 Our research spans various domains including consensus clustering, constrained clustering, balanced clustering, multi-view clustering, interpretable clustering, and fair clustering. We also work on heterogeneous domain adaptation, unsupervised feature selection, and business intelligence applications.
@@ -54,11 +54,11 @@ export default function Home() {
               },
               {
                 date: "2023/11",
-                content: "Congrats to Peizhao's NIJ Fellowship!"
+                content: "Congrats to Peizhao&apos;s NIJ Fellowship!"
               },
               {
                 date: "2023/11",
-                content: "Congrats to Peizhao's graduation!"
+                content: "Congrats to Peizhao&apos;s graduation!"
               },
               {
                 date: "2023/9",
