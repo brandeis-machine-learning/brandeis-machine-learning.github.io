@@ -1,0 +1,149 @@
+.section {
+  border: 1px solid #c5d4dd;
+  border-top: 3px solid #9eb5c1;
+  background: #e5edf2;
+  padding: 26px;
+  margin-top: 56px !important;
+}
+.group {
+  margin-top: 26px;
+  background: #f8fafc;
+  border: 1px solid #cbd9e1;
+  padding: 22px;
+}
+.group:nth-of-type(2) {
+  background: #eff5f3;
+}
+.group:nth-of-type(3) {
+  background: #f3f5f9;
+}
+.paper:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.groupHeading {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  border-bottom: 1px solid #aebfc8;
+  padding-bottom: 12px;
+}
+.groupHeading h3 {
+  margin: 0;
+  color: #365e71;
+  font-size: 21px;
+}
+.groupHeading span {
+  font-size: 14px;
+  color: #607784;
+  white-space: nowrap;
+}
+.section .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.paper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 24px;
+  padding: 22px 0;
+  border-bottom: 1px solid #d5e0e4;
+}
+.paper h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #253f4d;
+  margin: 0 0 7px;
+}
+.paper p {
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0;
+}
+.paper .pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0;
+  color: #111;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+.pdf img {
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .paper {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px 0;
+  }
+  .paper .pdf {
+    justify-self: start;
+  }
+  .groupHeading h3 {
+    font-size: 20px;
+  }
+}
+
+.takeaways h2 {
+  margin: 0 0 16px;
+}
+.takeaways ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.takeaways {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+}
+.takeaways .jumpLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111;
+  background: #edf3f6;
+  border: 1px solid #bdcdd6;
+}
+.jumpLink img {
+  flex-shrink: 0;
+}
+.section h2 {
+  scroll-margin-top: 96px;
+}
+@media (max-width: 760px) {
+  .takeaways {
+    grid-template-columns: 1fr;
+  }
+  .takeaways .jumpLink {
+    justify-self: start;
+  }
+}
+@media (max-width: 600px) {
+  .section {
+    padding: 18px 14px;
+  }
+  .group {
+    padding: 18px 14px;
+  }
+}
+
+.takeaways .jumpLink span {
+  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.takeaways .jumpLink:hover {
+  background: #f2f6f8;
+}

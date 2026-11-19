@@ -1,0 +1,200 @@
+.content {
+  max-width: 1180px;
+  margin: auto;
+  padding: 48px 36px 76px;
+}
+.pi {
+  padding: 34px 38px;
+  background: #eaf0ed;
+  border-left: 4px solid #9cb5ad;
+}
+.position {
+  margin-top: 16px;
+  color: #435e6a;
+}
+.bio {
+  max-width: 860px;
+  margin-top: 22px;
+  color: #526672;
+}
+.group {
+  margin-top: 58px;
+}
+.group > h2 {
+  margin-bottom: 26px;
+}
+@media (max-width: 760px) {
+  .content {
+    padding: 30px 24px 48px;
+  }
+  .pi {
+    padding: 26px 24px;
+  }
+  .group {
+    margin-top: 40px;
+  }
+}
+
+.memberContent {
+  padding-top: 26px;
+}
+.memberContent > .group:first-child {
+  margin-top: 0;
+}
+
+/* One continuous panel per roster; category bands share the same alignment. */
+.studentGroups,
+.alumniGroups {
+  border: 1px solid #d3dfe5;
+  background: #fff;
+}
+.rosterGroup {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+}
+.rosterGroup:nth-child(odd) {
+  background: #e8eff3;
+}
+.rosterGroup:nth-child(even) {
+  background: #f5f8fa;
+}
+.rosterGroup + .rosterGroup {
+  border-top: 1px solid #d3dfe5;
+}
+.rosterGroup h3 {
+  margin: 0;
+  color: #365e71;
+}
+.roster {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 12px 24px;
+  column-gap: 32px;
+  align-items: stretch;
+}
+.roster li {
+  padding: 10px 0;
+  min-width: 0;
+}
+.personLine {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.personLine .period {
+  white-space: nowrap;
+  font-size: 14px;
+  color: #637984;
+}
+.incoming {
+  display: grid;
+  grid-template-columns: 200px auto 1fr;
+  align-items: center;
+  gap: 0;
+  border: 1px solid #d3dfe5;
+  border-top: 0;
+  background: #e8eff3;
+  font-size: 15px;
+}
+.incoming strong {
+  padding: 20px 24px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.incoming > span:last-child {
+  padding: 16px 24px;
+  color: #637984;
+}
+.badge {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  color: #365e71;
+}
+@media (max-width: 1000px) {
+  .rosterGroup {
+    grid-template-columns: 180px minmax(0, 1fr);
+  }
+  .roster {
+    grid-template-columns: 1fr;
+  }
+  .incoming {
+    grid-template-columns: 180px auto 1fr;
+  }
+}
+@media (max-width: 760px) {
+  .rosterGroup {
+    grid-template-columns: 1fr;
+  }
+  .roster {
+    padding: 8px 20px;
+  }
+  .personLine {
+    font-size: 17px;
+  }
+  .incoming {
+    grid-template-columns: 1fr;
+  }
+  .incoming strong {
+    padding: 14px 20px 0;
+  }
+  .incoming > span:last-child {
+    padding: 2px 20px 14px;
+  }
+}
+
+.rosterGroup h3,
+.badge {
+  background: #d9e4eb;
+  border-right: 1px solid #bdcdd6;
+}
+@media (max-width: 760px) {
+  .rosterGroup h3,
+  .badge {
+    background: #d9e4eb;
+    border-right: 0;
+    border-bottom: 1px solid #bdcdd6;
+  }
+}
+
+.pi,
+.group {
+  scroll-margin-top: 88px;
+}
+
+/* Keep category typography above the shared .page h3 rule regardless of CSS load order. */
+.studentGroups .rosterGroup h3,
+.alumniGroups .rosterGroup h3,
+.badge {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: normal;
+  padding: 24px;
+}
+@media (max-width: 760px) {
+  .studentGroups .rosterGroup h3,
+  .alumniGroups .rosterGroup h3,
+  .badge {
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+}
+
+/* Incoming stays at 20px across all screen sizes. */
+.incoming .badge {
+  font-size: 20px;
+}
+
+.personLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #365e71;
+}
